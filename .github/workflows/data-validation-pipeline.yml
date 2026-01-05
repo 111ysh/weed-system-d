@@ -39,8 +39,8 @@ jobs:
       - name: 执行数据质量校验
         run: python data_quality_check.py
         env:
-          DATASET_PATH: './datasets/processed'
-          VALIDATION_LOG_PATH: './data_validation.log'
+          DATASET_PATH: 'datasets/processed'
+          VALIDATION_LOG_PATH: 'data_validation.log'
 
       - name: 上传校验日志
         uses: actions/upload-artifact@v4
